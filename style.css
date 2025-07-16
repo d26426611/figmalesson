@@ -5,12 +5,98 @@
   padding: 8px 12px;
   background-image: linear-gradient(180deg, #fff, #b0daef 40%, #c1e5ed);
 }
-
+.flex {
+  display: flex;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
 .ji {
-  background-color: #ffec3d;
+  font-size: 50px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    purple
+  );
   color: whitesmoke;
 }
 span {
   font-size: xx-large;
   font-weight: bold;
+}
+.blue,
+.bluetext {
+  color: blue;
+}
+.gay,
+.gaytext {
+  color: pink;
+}
+tr {
+  text-align: center;
+}
+.myb {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  background-image: url(./monkey.png);
+  background-size: contain;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(240, 245, 105);
+}
+.try {
+  font-size: 25px;
+  color: white;
+}
+.message {
+  transition: all 0.5s ease-in;
+  display: inline-block;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+.tri {
+  height: 0px;
+  width: 0px;
+  border-top: 50px solid rgb(8, 0, 255);
+
+  border-right: 50px solid transparent;
+
+  top: 310px;
+  right: 260px;
+}
+.cube {
+  height: 300px;
+  width: 300px;
+  background: rgb(8, 0, 255);
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  color: white;
+  text-justify: 10;
+  padding: 10px;
+}
+.message:hover {
+  transform: scale(90%);
+}
+.message.move {
+  transform: translateX(-150%);
+  opacity: 0%;
+}
+* {
+  box-sizing: border-box;
 }
